@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.dyt.ors.regression.RegressionTestCases">
+        <methods>
+          <include name="TC030_searchWithInvalidLotNo"/>
+          <include name="setupReport"/>
+          <include name="TC020_homePage"/>
+          <include name="TC010_AddSubCategory_Duplicaterecord"/>
+          <include name="TC008_AddSubCategory"/>
+          <include name="TC019_deleteProduct"/>
+          <include name="TC011_EditSubCategory"/>
+          <include name="TC003_AddMainCategory"/>
+          <include name="TC025_searchWithCatNo"/>
+          <include name="TC021_searchWithoutInputTheData"/>
+          <include name="TC013_AddProducts"/>
+          <include name="closeBrowser"/>
+          <include name="TC012_DeleteSubCategory"/>
+          <include name="TC005_AddMainCategory_WithoutMandatoryfields"/>
+          <include name="TC004_AddMainCategory_Duplicaterecord"/>
+          <include name="TC026_searchWithCasNo"/>
+          <include name="TC023_searchWithProductName"/>
+          <include name="TC007_DeleteMainCategory"/>
+          <include name="TC014_addProductswithoutMaindatoryFields"/>
+          <include name="TC017_EditProducts"/>
+          <include name="TC027_searchRelatedProducts"/>
+          <include name="TC009_AddSubCategory_WithoutMandatoryfields"/>
+          <include name="TC030_Search_RelatedDocuments_InValidLotNo"/>
+          <include name="TC018_EditProductExistingImage_Products"/>
+          <include name="TC029_searchRelatedDocuments"/>
+          <include name="TC024_searchWithSynonym"/>
+          <include name="flushReportAndOpen"/>
+          <include name="TC006_EditMainCategory"/>
+          <include name="TC022_searchWithInvalidData"/>
+          <include name="TC028_Search_RelatedCategories"/>
+          <include name="launchBrowser"/>
+          <include name="TC028_searchRelatedCategories"/>
+        </methods>
+      </class> <!-- com.dyt.ors.regression.RegressionTestCases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

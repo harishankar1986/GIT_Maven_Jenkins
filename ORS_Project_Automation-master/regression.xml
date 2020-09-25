@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.dyt.ors.regression.RegressionTestCases">
+      <methods>
+         <include name = 'TC001_adminLoginWithValidData'/>
+         <include name = 'TC002_adminLoginWithInValidData'/>
+         
+         <include name = 'TC003_AddMainCategory'/>
+         <include name = 'TC004_AddMainCategory_Duplicaterecord'/>
+         <include name = 'TC005_AddMainCategory_WithoutMandatoryfields'/>
+         <include name = 'TC006_EditMainCategory'/>
+         <exclude name = 'TC007_DeleteMainCategory'/>
+         
+         <include name = 'TC008_AddSubCategory'/>
+         <exclude name = 'TC009_AddSubCategory_WithoutMandatoryfields'/>
+         <include name = 'TC010_AddSubCategory_Duplicaterecord'/>
+         <include name = 'TC011_EditSubCategory'/>
+         <exclude name = 'TC012_DeleteSubCategory'/>
+         
+         <include name = 'TC013_AddProducts'/>
+         <include name = 'TC014_addProductswithoutMaindatoryFields'/>
+         <include name = 'TC015_addProductWithoutSubCategory'/>
+         <include name = 'TC016_addProductwithDuplicateProduct'/>
+         <include name = 'TC017_EditProducts'/>
+         <include name = 'TC018_EditProductExistingImage_Products'/>
+         <exclude name = 'TC019_deleteProduct'/>
+         
+         <include name = 'TC020_homePage'/>
+         <include name = 'TC021_searchWithoutInputTheData'/>
+         <include name = 'TC022_searchWithInvalidData'/>
+         <include name = 'TC023_searchWithProductName'/>
+         <include name = 'TC024_searchWithSynonym'/>
+         <include name = 'TC025_searchWithCatNo'/>
+         <include name = 'TC026_searchWithCasNo'/>
+         <include name = 'TC027_searchRelatedProducts'/>
+         <include name = 'TC028_Search_RelatedCategories'/>
+         <include name = 'TC028_searchRelatedCategories'/>
+         <include name = 'TC029_searchRelatedDocuments'/>
+         <include name = 'TC030_Search_RelatedDocuments_InValidLotNo'/>
+         <include name = 'TC030_searchWithInvalidLotNo'/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
